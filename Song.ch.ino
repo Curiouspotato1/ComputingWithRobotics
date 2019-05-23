@@ -1,0 +1,164 @@
+///Gravity Falls LED Sequence
+
+int ledPins[] = {2,3,4,5,6,7,8,9};
+int Blue1 = 2;
+int Blue2 = 3;
+int Green1 = 4;
+int Green2 = 5;
+int Yellow1 = 6;
+int Yellow2 = 7;
+int Red1 = 8;
+int Red2 = 9;
+const int buttonPin = 10;
+int i=0;
+
+void setup()
+{
+  int index;
+  for(index = 0; index <= 8; index++){
+pinMode(ledPins[index], OUTPUT);
+pinMode(buttonPin, INPUT);
+pinMode(2, OUTPUT);
+pinMode(3, OUTPUT);
+pinMode(4, OUTPUT);
+pinMode(5, OUTPUT);
+pinMode(6, OUTPUT);
+pinMode(7, OUTPUT);
+pinMode(8, OUTPUT);
+pinMode(9, OUTPUT);
+}
+  }
+void loop(){
+  int buttonState;
+  buttonState = digitalRead(buttonPin);
+  if(buttonState == LOW){
+           //1-4 repeated 2x
+digitalWrite(2, HIGH);
+digitalWrite(3, LOW);
+digitalWrite(4, LOW);
+digitalWrite(5, LOW);
+delay(190);
+digitalWrite(2, LOW);
+digitalWrite(3, HIGH);
+digitalWrite(4, LOW);
+digitalWrite(5, LOW);
+delay(190);
+digitalWrite(2, LOW);
+digitalWrite(3, LOW);
+digitalWrite(4, HIGH);
+digitalWrite(5, LOW);
+delay(190);
+digitalWrite(2, LOW);
+digitalWrite(3, LOW);
+digitalWrite(4, LOW);
+digitalWrite(5, HIGH);
+delay(190);
+digitalWrite(2, HIGH);
+digitalWrite(3, LOW);
+digitalWrite(4, LOW);
+digitalWrite(5, LOW);
+delay(190);
+digitalWrite(2, LOW);
+digitalWrite(3, HIGH);
+digitalWrite(4, LOW);
+digitalWrite(5, LOW);
+delay(190);
+digitalWrite(2, LOW);
+digitalWrite(3, LOW);
+digitalWrite(4, HIGH);
+digitalWrite(5, LOW);
+delay(190);
+digitalWrite(2, LOW);
+digitalWrite(3, LOW);
+digitalWrite(4, LOW);
+digitalWrite(5, HIGH);
+delay(190);
+digitalWrite(3, HIGH);
+digitalWrite(4, LOW);
+digitalWrite(5, LOW);
+digitalWrite(6, LOW);
+delay(190);
+digitalWrite(3, LOW);
+digitalWrite(4, HIGH);
+digitalWrite(5, LOW);
+digitalWrite(6, LOW);
+delay(190);
+digitalWrite(3, LOW);
+digitalWrite(4, LOW);
+digitalWrite(5, HIGH);
+digitalWrite(6, LOW);
+delay(190);
+digitalWrite(3, LOW);
+digitalWrite(4, LOW);
+digitalWrite(5, LOW);
+digitalWrite(6, HIGH);
+delay(190);
+digitalWrite(3, HIGH);
+digitalWrite(4, LOW);
+digitalWrite(5, LOW);
+digitalWrite(6, LOW);
+delay(190);
+digitalWrite(3, LOW);
+digitalWrite(4, HIGH);
+digitalWrite(5, LOW);
+digitalWrite(6, LOW);
+delay(190);
+digitalWrite(3, LOW);
+digitalWrite(4, LOW);
+digitalWrite(5, HIGH);
+digitalWrite(6, LOW);
+delay(190);
+digitalWrite(3, LOW);
+digitalWrite(4, LOW);
+digitalWrite(5, LOW);
+digitalWrite(6, HIGH);
+delay(190);
+digitalWrite(4, HIGH);
+digitalWrite(5, LOW);
+digitalWrite(6, LOW);
+digitalWrite(7, LOW);
+delay(190);
+digitalWrite(4, LOW);
+digitalWrite(5, HIGH);
+digitalWrite(6, LOW);
+digitalWrite(7, LOW);
+delay(190);
+digitalWrite(4, LOW);
+digitalWrite(5, LOW);
+digitalWrite(6, HIGH);
+digitalWrite(7, LOW);
+delay(190);
+digitalWrite(4, LOW);
+digitalWrite(5, LOW);
+digitalWrite(6, LOW);
+digitalWrite(7, HIGH);
+delay(190);
+digitalWrite(4, HIGH);
+digitalWrite(5, LOW);
+digitalWrite(6, LOW);
+digitalWrite(7, LOW);
+delay(190);
+digitalWrite(4, LOW);
+digitalWrite(5, HIGH);
+digitalWrite(6, LOW);
+digitalWrite(7, LOW);
+delay(190);
+digitalWrite(4, LOW);
+digitalWrite(5, LOW);
+digitalWrite(6, HIGH);
+digitalWrite(7, LOW);
+delay(190);
+digitalWrite(4, LOW);
+digitalWrite(5, LOW);
+digitalWrite(6, LOW);
+digitalWrite(7, HIGH);
+delay(190);
+digitalWrite(4, LOW);
+digitalWrite(5, LOW);
+digitalWrite(6, LOW);
+digitalWrite(7, LOW);
+delay(190);
+
+}
+  }
+
