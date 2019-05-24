@@ -1,4 +1,4 @@
-//RUBE GOLDBER0i
+//RUBE GOLDBERG
 
 //include the servo library
 #include <Servo.h>
